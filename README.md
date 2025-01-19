@@ -1,3 +1,5 @@
+Cody Ackerson Demonstration of deploying website to github pages.
+
 The purpose of this repository is to practice and learn skills related to DevOps and automation of the SDLC.
 The contents of this website are not as important as the background steps taken when updating and managing this site. 
 
