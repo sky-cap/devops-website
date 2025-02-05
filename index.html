@@ -5,67 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional profile of Cody Ackerson, DevOps Engineer, Frontend Developer, and Backend Developer">
     <title>Cody Ackerson - Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">Cody Ackerson</div>
-            <button class="hamburger-menu" aria-label="Toggle navigation">
-                &#9776;
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-4" href="#">Cody Ackerson</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fw-bolder fs-4" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Hello! I'm Cody Ackerson, a seasoned DevOps Engineer and Full Stack Developer. My expertise spans:</p>
-            <ul>
-                <li>Frontend development with React</li>
-                <li>Backend development using PHP and Node.js</li>
-                <li>Mobile app development with Kotlin</li>
-                <li>Linux administration and networking with Cisco devices</li>
-            </ul>
-            <p>With a passion for creating efficient and scalable solutions, I thrive in delivering impactful projects that solve complex problems.</p>
-        </section>
+    <main class="container">
+        <div class="card shadow">
+            <section id="about" class="card-body">
+                <h1 class="card-title">About Me</h1>
+                <p class="card-text">Hello! I'm Cody Ackerson, a DevOps Engineer and Full Stack Developer student. My expertise spans:</p>
+                <ul>
+                    <li>Frontend development with React</li>
+                    <li>Backend development using PHP and Node.js</li>
+                    <li>Mobile app development with Kotlin</li>
+                    <li>Linux administration and networking with Cisco devices</li>
+                </ul>
+                <p class="card-text">With a passion for creating efficient and scalable solutions, I thrive in delivering impactful projects that solve complex problems.</p>
+            </section>
+        </div>
 
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project-list">
-                <a href="project1.html" class="project-card">
-                    <h2>Project 1: CI/CD Pipeline</h2>
-                    <p>Developed an automated CI/CD pipeline for streamlined software delivery.</p>
-                </a>
-                <a href="project2.html" class="project-card">
-                    <h2>Project 2: Cloud Infrastructure Optimization</h2>
-                    <p>Optimized cloud resource management for reduced costs and improved performance.</p>
-                </a>
-                <a href="project3.html" class="project-card">
-                    <h2>Project 3: React and Node.js Application</h2>
-                    <p>Designed a scalable full-stack application using React and Node.js.</p>
-                </a>
-            </div>
-        </section>
+        <div class="card shadow">
+            <section id="projects" class="card-body">
+                <h1 class="card-title">Projects</h1>
+                <div class="project-list">
+                    <a href="project1.html" class="project-card card">
+                        <div class="card-body">
+                            <h2 class="card-title">Project 1: CI/CD Pipeline</h2>
+                            <p class="card-text">Developed an automated CI/CD pipeline for streamlined software delivery.</p>
+                        </div>
+                    </a>
+                    <a href="project2.html" class="project-card card">
+                        <div class="card-body">
+                            <h2 class="card-title">Project 2: Cloud Infrastructure Optimization</h2>
+                            <p class="card-text">Optimized cloud resource management for reduced costs and improved performance.</p>
+                        </div>
+                    </a>
+                    <a href="project3.html" class="project-card card">
+                        <div class="card-body">
+                            <h2 class="card-title">Project 3: React and Node.js Application</h2>
+                            <p class="card-text">Designed a scalable full-stack application using React and Node.js.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
 
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Email: <a href="mailto:founder@upperleftweb.com">founder@upperleftweb.com</a></p>
-            <p>GitHub: <a href="https://github.com/sky-cap" target="_blank">sky-cap</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/codyackerson" target="_blank">codyackerson</a></p>
-            <p>Website: <a href="https://www.upperleftweb.com" target="_blank">upperleftweb.com</a></p>
-        </section>
+        <div class="card shadow">
+            <section id="contact" class="card-body">
+                <h1 class="card-title">Contact</h1>
+                <p class="card-text">Email: <a href="mailto:founder@upperleftweb.com">founder@upperleftweb.com</a></p>
+                <p class="card-text">GitHub: <a href="https://github.com/sky-cap" target="_blank">sky-cap</a></p>
+                <p class="card-text">LinkedIn: <a href="https://www.linkedin.com/in/codyackerson" target="_blank">codyackerson</a></p>
+                <p class="card-text">Website: <a href="https://www.upperleftweb.com" target="_blank">upperleftweb.com</a></p>
+            </section>
+        </div>
     </main>
 
-    <footer>
+    <footer class="shadow">
         <p>&copy; 2025 Cody Ackerson. All rights reserved.</p>
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
