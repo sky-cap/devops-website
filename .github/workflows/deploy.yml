@@ -6,11 +6,6 @@ on:
   push:
     branches: ["main"]
 
-  # Runs on pull request approval targeting the default branch
-  pull_request:
-    types: [closed]
-    branches: ["main"]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -29,7 +24,6 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    if: github.event.pull_request.merged == true || github.event_name == 'push'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
